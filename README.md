@@ -3,6 +3,18 @@ markdown
 
 Микросервис для управления складскими остатками и заказами. Реализован с учетом требований по неограниченной вложенности категорий и аналитической отчетности.
 
+### Настройка окружения
+Для работы проекта необходимо создать файл `.env` в корневой папке. 
+Пример содержимого (совместим с текущим docker-compose.yaml):
+
+```env
+# Параметры PostgreSQL
+POSTGRES_USER= your_user
+POSTGRES_PASSWORD=your_secure_password
+POSTGRES_DB=it_guru_test_db
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+
 ##  Стек технологий
 - **Backend:** Python 3.12.13 + FastAPI
 - **DB:** PostgreSQL 15 + SQLAlchemy 2.0
